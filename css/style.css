@@ -1,5 +1,4 @@
 /* FONTS*/
-
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/Roboto/Roboto-Regular.eot');
@@ -43,11 +42,101 @@ body {
 }
 
 /* invisible h1 tag for seo purposes*/
-h1 {
-    width: 7.5rem;
-    height: 0   ;
-    opacity: 0;
+h1 { opacity: 0; }
+
+/* HOVER and ACTIVE effects styles */
+nav li:hover,
+.title-block button:hover,
+.email-inputs-wrapper button:hover,
+.title-block button:active,
+.email-inputs-wrapper button:active,
+.toggle:hover,
+.toggle:active,
+.articles-preview-slider div:hover,
+.articles-preview-slider div:active,
+.footer-navigation li:hover,
+.footer-navigation li:active {
+    cursor: pointer;
+    outline: none;
 }
+
+nav li:hover,
+.footer-navigation li:hover { color: #cd6326; }
+
+nav li:active,
+.footer-navigation li:active { color: #8f5614; }
+
+nav li:last-of-type:hover {
+    color: #ffffff;
+    background-color: #cd6326;
+}
+
+nav li:last-of-type:active {
+    color: #ffffff;
+    border: 0.125rem solid #8f5614;
+}
+
+#magnifier:hover svg path,
+.toggle:hover svg path { fill: #cd6326; }
+
+#magnifier:active svg path,
+.toggle:active svg path { fill: #8f5614; }
+
+.title-block button:hover,
+.email-inputs-wrapper button:hover { background-color: #e29128; }
+
+.title-block button:active,
+.email-inputs-wrapper button:active,
+nav li:last-of-type:active { background-color: #8f5614; }
+
+.articles-preview-slider div:nth-of-type(2):hover,
+.articles-preview-slider div:nth-of-type(3):hover,
+.articles-preview-slider div:nth-of-type(4):hover { box-shadow: .2rem .2rem 1.5rem #333333; }
+
+.articles-preview-slider div:nth-of-type(2):active,
+.articles-preview-slider div:nth-of-type(3):active,
+.articles-preview-slider div:nth-of-type(4):active { box-shadow: .2rem .2rem 1.5rem #000000; }
+
+.social-media-links li:hover .social-media-icons path:first-of-type {
+    fill: #cd6326;
+    animation: background-path-anim .3s linear;
+}
+
+@keyframes background-path-anim {
+    from {
+        fill: #f7f7f7;
+    }
+    to {
+        fill: #cd6326;
+    }
+}
+
+.social-media-links li:active .social-media-icons path:first-of-type { fill: #8f5614; }
+
+.social-media-links li:hover .social-media-icons path:last-of-type,
+.social-media-links li:hover .instagram path:nth-of-type(2),
+.social-media-links li:hover .instagram path:nth-of-type(3) {
+    fill: #f7f7f7;
+    animation: icon-path-anim .3 linear;
+}
+
+@keyframes icon-path-anim {
+    from {
+        fill: #134731;
+    }
+    to {
+        fill: #f7f7f7;
+    }
+}
+
+/* HEADER animation when scrolling */
+.scrolled-header {
+    background-blend-mode: color;
+    mix-blend-mode: difference;
+}
+.scrolled-header-svg { fill: #333333; }
+
+.scrolled-header-text { color: #333333; }
 
 /* HEADER + TITLE BLOCK styles */
 .title-blocks-wrapper {
@@ -59,6 +148,7 @@ header {
     position: fixed;
     top: 0;
     left: 50%; /* position left 50% as well as negative margin-left with value of 0.5 of block's width (-37.5rem) are for center position of header */
+    z-index: 1;
     margin-left: -37.5rem;
     width: 75rem;
     height: 6rem;
@@ -93,9 +183,7 @@ nav {
     width: 40rem;
 }
 
-nav ul {
-    width: 100%;
-}
+nav ul { width: 100%; }
 
 nav ul li {
     position: absolute;
@@ -103,16 +191,11 @@ nav ul li {
     height: 3.75rem;
     font-size: 1.438rem;
     line-height: 3rem;
-
 }
 
-nav ul li:nth-of-type(1) {
-    right: 26.96rem;
-}
+nav ul li:nth-of-type(1) { right: 26.96rem; }
 
-nav ul li:nth-of-type(2) {
-    right: 17.1rem;
-}
+nav ul li:nth-of-type(2) { right: 17.1rem; }
 
 #magnifier {
     top: .5rem;
@@ -150,9 +233,8 @@ nav ul li:last-of-type {
     background: url('../images/fox-background.jpg') center no-repeat;
 }
 
-.title-block h2, .title-block button {
-    margin-left: 7.5rem;
-}
+.title-block h2,
+.title-block button { margin-left: 7.5rem; }
 
 .title-block h2 {
     position: absolute;
@@ -226,32 +308,22 @@ section h4 {
 .articles-preview-slider div h5  {
     font-size: 1.375rem;
     padding-top: 83.5%;
- }
+}
 
 .articles-preview-slider div p  {
     line-height: 3rem;
     letter-spacing: .03rem;
 }
 
-.articles-preview-slider div:nth-of-type(2) {
-    background: url('../images/deer-article.jpg') center no-repeat;
-}
+.articles-preview-slider div:nth-of-type(2) { background: url('../images/deer-article.jpg') center no-repeat; }
 
-.articles-preview-slider div:nth-of-type(3) {
-    background: url('../images/squirrel-article.jpg') center no-repeat;
-}
+.articles-preview-slider div:nth-of-type(3) { background: url('../images/squirrel-article.jpg') center no-repeat; }
 
-.articles-preview-slider div:nth-of-type(4) {
-    background: url('../images/bird-article.jpg') center no-repeat;
-}
+.articles-preview-slider div:nth-of-type(4) { background: url('../images/bird-article.jpg') center no-repeat; }
 
-.articles-preview-slider div:nth-of-type(5) {
-    background: url('../images/bear-article.jpg') center no-repeat;
-}
+.articles-preview-slider div:nth-of-type(5) { background: url('../images/bear-article.jpg') center no-repeat; }
 
-.slide-inactive {
-    display: none;
-}
+.slide-inactive { display: none; }
 
 .email-subscription h3 {
     padding-top: 8.8rem;
@@ -286,9 +358,7 @@ section h4 {
 
 }
 
-
 /* FOOTER styles */
-
 .footer-wrapper {
     width: 100%;
     height: 22.5rem;
@@ -302,13 +372,16 @@ footer {
     background: url('../images/footer-background.jpg') center no-repeat;
 }
 
-footer, .footer-navigation, .social-media-links {
+footer,
+.footer-navigation,
+.social-media-links {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
 }
 
-.footer-navigation, .social-media-links {
+.footer-navigation,
+.social-media-links {
     height: 3.75rem;
     justify-content: space-between;
 }
@@ -320,13 +393,11 @@ footer .logo-wrapper {
 
 .footer-navigation {
     position: absolute;
-    left: 27.5rem;
+    left: 30rem;
     width: 29.5rem;
 }
 
-.footer-navigation li {
-    font-size: 1.438rem;
-}
+.footer-navigation li { font-size: 1.438rem; }
 
 .social-media-links {
     position: absolute;
@@ -337,18 +408,4 @@ footer .logo-wrapper {
 .social-media-links li {
     width: 2.5rem;
     height: 2.5rem;
-}
-
-.social-media-icons path:first-of-type:hover {
-    fill: #cd6326;
-    animation: social-media-hover .3s linear;
-}
-
-@keyframes social-media-hover {
-    from {
-        fill: #f7f7f7;
-    }
-    to {
-        fill: #cd6326;
-    }
 }
