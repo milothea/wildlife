@@ -8,7 +8,7 @@ function runScript() {
   function animateHeader() {
     const header = document.querySelector('header'),
       logo = document.querySelector('.logo-wrapper svg path'),
-      logoTitle = document.querySelector('.logo-wrapper div'),
+      logoTitle = document.querySelector('.logo-wrapper p'),
       nav = document.querySelector('nav'),
       magnifier = document.querySelector('#magnifier path'),
       pageYOffset = window.pageYOffset,
