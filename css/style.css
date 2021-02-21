@@ -102,37 +102,21 @@ nav li:last-of-type:active { background-color: #8f5614; }
 .articles-preview-slider div:nth-of-type(3):active,
 .articles-preview-slider div:nth-of-type(4):active { box-shadow: .2rem .2rem 1.5rem #000000; }
 
-.social-media-links li:first-of-type:hover {
-    background-image: url('../images/facebook-hovered.svg');
-}
+.social-media-links li:first-of-type:hover { background-image: url('../images/facebook-hovered.svg'); }
 
-.social-media-links li:first-of-type:active {
-    background-image: url('../images/facebook-active.svg');
-}
+.social-media-links li:first-of-type:active { background-image: url('../images/facebook-active.svg'); }
 
-.social-media-links li:nth-of-type(2):hover {
-    background-image: url('../images/instagram-hovered.svg');
-}
+.social-media-links li:nth-of-type(2):hover { background-image: url('../images/instagram-hovered.svg'); }
 
-.social-media-links li:nth-of-type(2):active {
-    background-image: url('../images/instagram-active.svg');
-}
+.social-media-links li:nth-of-type(2):active { background-image: url('../images/instagram-active.svg'); }
 
-.social-media-links li:nth-of-type(3):hover {
-    background-image: url('../images/pinterest-hovered.svg');
-}
+.social-media-links li:nth-of-type(3):hover { background-image: url('../images/pinterest-hovered.svg'); }
 
-.social-media-links li:nth-of-type(3):active {
-    background-image: url('../images/pinterest-active.svg');
-}
+.social-media-links li:nth-of-type(3):active { background-image: url('../images/pinterest-active.svg'); }
 
-.social-media-links li:last-of-type:hover {
-    background-image: url('../images/youtube-hovered.svg');
-}
+.social-media-links li:last-of-type:hover { background-image: url('../images/youtube-hovered.svg'); }
 
-.social-media-links li:last-of-type:active {
-    background-image: url('../images/youtube-active.svg');
-}
+.social-media-links li:last-of-type:active { background-image: url('../images/youtube-active.svg'); }
 
 /* HEADER animation when scrolling */
 .scrolled-header {
@@ -422,18 +406,10 @@ footer .logo-wrapper {
     height: 2.5rem;
 }
 
-.social-media-links li:first-of-type {
-    background: url('../images/facebook.svg') center no-repeat;
-}
+.social-media-links li:first-of-type { background: url('../images/facebook.svg') center no-repeat; }
 
-.social-media-links li:nth-of-type(2) {
-    background: url('../images/instagram.svg') center no-repeat;
-}
+.social-media-links li:nth-of-type(2) { background: url('../images/instagram.svg') center no-repeat; }
 
-.social-media-links li:nth-of-type(3) {
-    background: url('../images/pinterest.svg') center no-repeat;
-}
+.social-media-links li:nth-of-type(3) { background: url('../images/pinterest.svg') center no-repeat; }
 
-.social-media-links li:last-of-type {
-    background: url('../images/youtube.svg') center no-repeat;
-}
+.social-media-links li:last-of-type { background: url('../images/youtube.svg') center no-repeat; }
